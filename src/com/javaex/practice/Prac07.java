@@ -4,33 +4,35 @@ import java.util.*;
 
 public class Prac07 {
 	public static void main(String[] args) {
-		int ran_num = (int)(Math.random()*100)+1;
 		Scanner sc = new Scanner(System.in);
 		boolean i = true;
 		System.out.println("==========================");
-		System.out.println("\t[¼ıÀÚ¸ÂÃß±â°ÔÀÓ ½ÃÀÛ]");
+		System.out.println("\t[ìˆ«ìë§ì¶”ê¸° ê²Œì„ ì‹œì‘]");
 		System.out.println("==========================");
-		while( i == true) {
-			System.out.print(">>");
-			int play_num = sc.nextInt();
-			if (play_num == ran_num) {
-				System.out.println("¸Â¾Ò½À´Ï´Ù.");
-				System.out.print("°ÔÀÓÀ» Á¾·áÇÏ½Ã°Ú½À´Ï±î?(y/n) >>");
-				String senm_mes = sc.next();
-				if("y".equals(senm_mes)) {
-					System.out.println("==========================");
-					System.out.println("\t[¼ıÀÚ¸ÂÃß±â°ÔÀÓ Á¾·á]");
-					System.out.println("==========================");
-					i =false;
-				} else {
-					ran_num = (int)(Math.random()*100)+1;
-					continue;
+		while (i == true) {
+			int ran_num = (int) (Math.random() * 100) + 1;
+			boolean j = true;
+			while (j == true) {
+				System.out.print(">>");
+				int play_num = sc.nextInt();
+				if (play_num == ran_num) {
+					System.out.println("ë§ì•˜ìŠµë‹ˆë‹¤..");
+					System.out.print("ê²Œì„ì„ ì¢…ë£Œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?(y/n) >>");
+					String senm_mes = sc.next();
+					if ("y".equals(senm_mes)) {
+						System.out.println("==========================");
+						System.out.println("\t[ìˆ«ìë§ì¶”ê¸° ê²Œì„ ì¢…ë£Œ]");
+						System.out.println("==========================");
+						i = false;
+						j = false; 
+					} else {
+						j = false;
+					}
+				} else if (play_num > ran_num) {
+					System.out.println("ë” ë‚®ê²Œ");
+				} else if (play_num < ran_num) {
+					System.out.println("ë” ë†’ê²Œ");
 				}
-			} else if(play_num > ran_num) {
-				System.out.println("´õ ³·°Ô");
-			} else if(play_num < ran_num){
-				System.out.println("´õ ³ô°Ô");
-				
 			}
 		}
 	}

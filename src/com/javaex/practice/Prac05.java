@@ -6,14 +6,14 @@ public class Prac05 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int big = 0;
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À.");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		for(int i = 0; i<5; i++) {
-			System.out.print("¼ıÀÚ: ");
+			System.out.print("ìˆ«ì: ");
 			int num = sc.nextInt();
 			if(num >= big)
 				big = num;
 		}
-		System.out.println("ÃÖ´ë°ªÀº "+big+"ÀÔ´Ï´Ù.");
+		System.out.println("ìµœëŒ€ê°’ì€"+big+"ì…ë‹ˆë‹¤..");
 	}
 
 }

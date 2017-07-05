@@ -8,32 +8,32 @@ public class Prac08 {
 		boolean i = true;
 		int sum = 0;
 		System.out.println("==========================");
-		System.out.println("1.¿¹±Ý | 2.Ãâ±Ý | 3.ÀÜ°í | 4.Á¾·á");
+		System.out.println("1.ì˜ˆê¸ˆ | 2.ì¶œê¸ˆ | 3.ìž”ê³  | 4.ì¢…ë£Œ");
 		System.out.println("==========================");
 		while( i == true) {
-			System.out.print("¼±ÅÃ>");
+			System.out.print("ì„ íƒ>");
 			int sel_num = sc.nextInt();
 			switch(sel_num){
 			case 1:
-				System.out.print("¿¹±Ý¾×>");
+				System.out.print("ì˜ˆê¸ˆì•¡>");
 				int despoit = sc.nextInt();
 				sum+=despoit;
 				break;
 			case 2:
-				System.out.print("Ãâ±Ý¾×>");
+				System.out.print("ì¶œê¸ˆì•¡>");
 				int withdrawal = sc.nextInt();
 				sum-=withdrawal;
 				break;
 			case 3:
-				System.out.print("ÀÜ°í¾×>");
+				System.out.print("ìž”ê³ ì•¡>");
 				System.out.println(sum);
 				break;
 			case 4:
-				System.out.print("Á¾·áÇÕ´Ï´Ù.");
+				System.out.print("í”„ë¡œê·¸ëž¨ ì¢…ë£Œ.");
 				i = false;
 				break;
 			default:
-				System.out.println("´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš”");
 				break;
 					
 			}

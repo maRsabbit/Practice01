@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Prac06 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner sc1 = new Scanner(System.in);
 		int sum = 0;
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À.");
-		int num = sc.nextInt();
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
+		int num = sc1.nextInt();
 		if(num%2 ==0 ) {
 			for(int i=2; i<=num; i+=2) {
 				sum += i; 
@@ -17,6 +17,6 @@ public class Prac06 {
 				sum += i; 
 			}
 		}
-		System.out.println("°á°ú°ª : "+sum);
+		System.out.println("ê²°ê³¼ê°’ : "+sum);
 	}
 }

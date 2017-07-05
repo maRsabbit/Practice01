@@ -5,7 +5,7 @@ import java.util.*;
 public class Prac02 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int indata = sc.nextInt();
 		for(int i=1; i<=indata; i++) {
 			for(int j=1; j<=i; j++) {
